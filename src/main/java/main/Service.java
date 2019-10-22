@@ -1,7 +1,7 @@
 package main;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 class Service {
     String reverse(String string){
@@ -9,7 +9,7 @@ class Service {
     }
 
     Map stringInfo(String string){
-        TreeMap<String, Integer> infoMap = new TreeMap<>();
+        LinkedHashMap<String, Integer> infoMap = new LinkedHashMap<>();
         int upperCase = 0;
         int lowerCase= 0;
         int numbers = 0;
