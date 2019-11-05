@@ -1,19 +1,17 @@
 PKKWU dokumentacja
 Wiktor Filipowicz
-
-class Controller.java
-  Klasa zawiera definicje end pointów api.
-
-
-class Service.java
-  Klasa zawiera medoty wykonywane po wpisaniu end pointów.
   
-    method reverse()
-      Po wpisaniu endpointa /rev/string, ciąg znaków, który wpisało się
-      w miejsce 'string' zostanie odwrócony oraz zwrócony jako String.
+    endpoint /rev/{string}
+      Ciąg znaków, który wpisało się w miejsce 'string' zostanie odwrócony
+      oraz zwrócony jako String.
       
-    method stringInfo()
-      Po wpisaniu endpoint /string/zmienna, ciąg znaków, który został wpisany
-      w miejsce 'zmienna' zostanie sprawdzony pod względem występowania dużych,
-      małych liter, liczb oraz znaków specjalnych. Zostanie zwrócona mapa<string, int>,
-      w której kluczem jest nazwa rodzaju znaku, a wartością ilość wystąpień.
+    endpoint /string/{zmienna}
+      Ciąg znaków, który został wpisany w miejsce 'zmienna' zostanie sprawdzony pod
+      względem występowania dużych, małych liter, liczb oraz znaków specjalnych.
+      Zostanie zwrócony json, w którym kluczem jest nazwa rodzaju
+      znaku, a wartością ilość wystąpień.
+      
+    endpoint /ics
+      Zostanie swrócony stworzony plik calendar.ics w głównym folderze programu, a
+      w przeglądarce wyświetlona jego zawartość.
+      
