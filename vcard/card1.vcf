@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:ez-vcard 0.10.5
+FN:Paweł Kapusta
+TITLE:dr inż.
+EMAIL:pawel.kapusta@p.lodz.pl
+TEL:4842 631 27 56
+NOTE:I24 - Instytut Informatyki Stosowanej
+END:VCARD

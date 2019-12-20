@@ -3,7 +3,7 @@ async function find() {
     password = document.getElementById("password").value
     search = document.getElementById("search").value
 
-    var url = "http://10.104.28.144:8080//vcard/" + search + "?login=" + login + "&password=" + password;
+    var url = "http://localhost:8080/vcard/" + search + "?login=" + login + "&password=" + password;
 
     var response = await fetch(encodeURI(url)).then((res) => res.text());
 
